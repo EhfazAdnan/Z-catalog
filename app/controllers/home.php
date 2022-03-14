@@ -1,7 +1,7 @@
 <?php
 
-Class Home {
+Class Home extends Controller{
     public function index(){
-        echo "this is from home controller and index method";
+       $this->view("catalog/index");
     }
 }
