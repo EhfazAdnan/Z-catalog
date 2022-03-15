@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catalog-Z About page</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="css/templatemo-style.css">
+    <link rel="stylesheet" href="<?=ASSETS?>catalog/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?=ASSETS?>catalog/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="<?=ASSETS?>catalog/css/templatemo-style.css">
 <!--
     
 TemplateMo 556 Catalog-Z
@@ -36,16 +36,16 @@ https://templatemo.com/tm-556-catalog-z
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link nav-link-1" href="index.php">Photos</a>
+                    <a class="nav-link nav-link-1" href="index">Photos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-link-2" href="videos.php">Videos</a>
+                    <a class="nav-link nav-link-2" href="videos">Videos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-link-3 active" aria-current="page" href="about.php">About</a>
+                    <a class="nav-link nav-link-3 active" aria-current="page" href="about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-link-4" href="contact.php">Contact</a>
+                    <a class="nav-link nav-link-4" href="contact">Contact</a>
                 </li>
             </ul>
             </div>
@@ -176,7 +176,7 @@ https://templatemo.com/tm-556-catalog-z
         </div>
     </footer>
     
-    <script src="js/plugins.js"></script>
+    <script src="<?=ASSETS?>catalog/js/plugins.js"></script>
     <script>
         $(window).on("load", function() {
             $('body').addClass('loaded');
