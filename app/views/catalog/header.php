@@ -40,6 +40,10 @@
                 <li class="nav-item">
                     <a class="nav-link nav-link-4 <?= ($data['page_title']) == "Contact" ? 'active' : ''; ?>" href="<?=ROOT?>contact">Contact</a>
                 </li>
+
+                <li class="nav-item">
+                    <a class="nav-link nav-link-4 <?= ($data['page_title']) == "Upload Image" ? 'active' : ''; ?>" href="<?=ROOT?>upload/image">Upload Image</a>
+                </li>
             </ul>
             </div>
         </div>
