@@ -3,17 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catalog-Z Bootstrap 5.0 HTML Template</title>
+    <title><?= $data['page_title'] . " | " . WEBSITE_TITLE ?></title>
     <link rel="stylesheet" href="<?=ASSETS?>catalog/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?=ASSETS?>catalog/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="<?=ASSETS?>catalog/css/templatemo-style.css">
-<!--
-    
-TemplateMo 556 Catalog-Z
-
-https://templatemo.com/tm-556-catalog-z
-
--->
 </head>
 <body>
     <!-- Page Loader -->
@@ -36,16 +29,16 @@ https://templatemo.com/tm-556-catalog-z
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link nav-link-1 active" aria-current="page" href="index">Photos</a>
+                    <a class="nav-link nav-link-1 <?= ($data['page_title']) == "Photos" ? 'active' : ''; ?> " aria-current="page" href="index">Photos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-link-2" href="videos">Videos</a>
+                    <a class="nav-link nav-link-2 <?= ($data['page_title']) == "Videos" ? 'active' : ''; ?> " href="videos">Videos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-link-3" href="about">About</a>
+                    <a class="nav-link nav-link-3 <?= ($data['page_title']) == "About" ? 'active' : ''; ?>" href="about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-link-4" href="contact">Contact</a>
+                    <a class="nav-link nav-link-4 <?= ($data['page_title']) == "Contact" ? 'active' : ''; ?>" href="contact">Contact</a>
                 </li>
             </ul>
             </div>

@@ -2,6 +2,7 @@
 
 Class Videos extends Controller{
     public function index(){
-       $this->view("catalog/videos");
+       $data['page_title'] = "Videos";
+       $this->view("catalog/videos", $data);
     }
 }
