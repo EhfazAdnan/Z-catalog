@@ -5,4 +5,11 @@ class Controller {
             include "../app/views/" . $view . ".php";
         }
     }
+
+    public function loadModel($model){
+        if(file_exists("../app/models/" . strtolower($model) . ".php")){
+           include "../app/models/" . strtolower($model) . ".php";
+           return $modal = new $model();
+        }
+    }
 }
