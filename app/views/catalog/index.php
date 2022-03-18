@@ -18,7 +18,7 @@
             </h2>
             <div class="col-6 d-flex justify-content-end align-items-center">
                 <form action="" class="tm-text-primary">
-                    Page <input type="text" value="1" size="1" class="tm-input-paging tm-text-primary"> of 200
+                    Page <input type="text" value="<?= $data['page_current'] ?>" size="1" class="tm-input-paging tm-text-primary"> of 200
                 </form>
             </div>
         </div>
@@ -41,14 +41,14 @@
         </div> <!-- row -->
         <div class="row tm-mb-90">
             <div class="col-12 d-flex justify-content-between align-items-center tm-paging-col">
-                <a href="javascript:void(0);" class="btn btn-primary tm-btn-prev mb-2 disabled">Previous</a>
+                <a href="<?= $data['page_prev'] ?>" class="btn btn-primary tm-btn-prev mb-2">Previous</a>
                 <div class="tm-paging d-flex">
-                    <a href="javascript:void(0);" class="active tm-paging-link">1</a>
-                    <a href="javascript:void(0);" class="tm-paging-link">2</a>
-                    <a href="javascript:void(0);" class="tm-paging-link">3</a>
-                    <a href="javascript:void(0);" class="tm-paging-link">4</a>
+                    <a href="<?= $data['page_1'] ?>" class="active tm-paging-link">1</a>
+                    <a href="<?= $data['page_2'] ?>" class="tm-paging-link"><?= ($data['page_current'] + 1) ?></a>
+                    <a href="<?= $data['page_3'] ?>" class="tm-paging-link"><?= ($data['page_current'] + 2) ?></a>
+                    <a href="<?= $data['page_4'] ?>" class="tm-paging-link"><?= ($data['page_current'] + 3) ?></a>
                 </div>
-                <a href="javascript:void(0);" class="btn btn-primary tm-btn-next">Next Page</a>
+                <a href="<?= $data['page_next'] ?>" class="btn btn-primary tm-btn-next">Next Page</a>
             </div>            
         </div>
     </div> <!-- container-fluid, tm-container-content -->
