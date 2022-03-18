@@ -17,6 +17,7 @@ Class Home extends Controller{
        $data['page_current'] = $pag->current_page_number();
 
        $load_class = $this->loadModel("load_images");
+       $data['page_total'] = $load_class->get_total();
 
        $find = isset($_GET['find']) ? $_GET['find'] : "";
 

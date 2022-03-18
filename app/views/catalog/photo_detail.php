@@ -11,11 +11,11 @@
 
     <div class="container-fluid tm-container-content tm-mt-60">
         <div class="row mb-4">
-            <h2 class="col-12 tm-text-primary">Photo title goes here</h2>
+            <h2 class="col-12 tm-text-primary"><?=$data['image']->title; ?></h2>
         </div>
         <div class="row tm-mb-90">            
             <div class="col-xl-8 col-lg-7 col-md-6 col-sm-12">
-                <img src="<?=ASSETS?>catalog/img/img-01-big.jpg" alt="Image" class="img-fluid">
+                <img src="<?=ROOT . $data['image']->image; ?>" alt="Image" class="img-fluid">
             </div>
             <div class="col-xl-4 col-lg-5 col-md-6 col-sm-12">
                 <div class="tm-bg-gray tm-video-details">
@@ -165,7 +165,7 @@
 
     <?php $this->view("catalog/footer", $data); ?>
     
-    <script src="js/plugins.js"></script>
+    <script src="<?=ASSETS?>catalog/js/plugins.js"></script>
     <script>
         $(window).on("load", function() {
             $('body').addClass('loaded');

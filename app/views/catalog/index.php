@@ -18,7 +18,7 @@
             </h2>
             <div class="col-6 d-flex justify-content-end align-items-center">
                 <form action="" class="tm-text-primary">
-                    Page <input type="text" value="<?= $data['page_current'] ?>" size="1" class="tm-input-paging tm-text-primary"> of 200
+                    Page <input type="text" value="<?= $data['page_current'] ?>" size="1" class="tm-input-paging tm-text-primary"> of <?= $data['page_total'] ?>
                 </form>
             </div>
         </div>

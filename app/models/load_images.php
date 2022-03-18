@@ -1,6 +1,7 @@
 <?php
 
 Class Load_images{
+
     public function get_images($find = ''){
         $DB = new Database();
 
@@ -20,4 +21,20 @@ Class Load_images{
         }
         
     }
+
+    public function get_total(){
+        $DB = new Database();
+        $query = "select * from images";
+        return count($DB->read($query));
+    }
+
+    public function get_single_image($url_address){
+        $DB = new Database();
+        $query = "select * from images where url_address = :url limit 1";
+        $arr['url'] = $url_address;
+        $data = $DB->read($query, $arr);
+        return $data[0];
+    }
+
+
 }
