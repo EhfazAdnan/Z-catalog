@@ -30,6 +30,10 @@ Class Load_images{
 
     public function get_single_image($url_address){
         $DB = new Database();
+        $query = "Update images set views = views + 1 where url_address = :url limit 1";
+        $arr['url'] = $url_address;
+        $DB->write($query, $arr);
+
         $query = "select * from images where url_address = :url limit 1";
         $arr['url'] = $url_address;
         $data = $DB->read($query, $arr);
