@@ -22,6 +22,7 @@
             <a class="navbar-brand" href="#">
                 <i class="fas fa-film mr-2"></i>
                 <?php echo WEBSITE_TITLE; ?>
+                <?php echo $_SESSION['user_email']; ?>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
