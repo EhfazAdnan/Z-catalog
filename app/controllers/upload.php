@@ -8,6 +8,13 @@ Class Upload extends Controller{
 
     public function image(){
         $data['page_title'] = "Upload Image";
+
+        // check if logged in
+        $user = $this->loadModel("user");
+        if(!$result = $user->is_looged_in()){
+            header("Location: " . ROOT . "login");
+            die;
+        }
  
         if(isset($_FILES['file'])){
             $model = $this->loadModel("upload_file");
